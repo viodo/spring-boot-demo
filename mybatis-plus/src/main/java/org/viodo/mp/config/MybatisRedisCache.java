@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * 文件描述
+ * Mybatis Cache 配置
  *
  * @author xc.chen
  * @date 2021/8/25 13:54
