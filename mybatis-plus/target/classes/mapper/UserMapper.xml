@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.viodo.mp.mapper.UserMapper">
+
+    <resultMap id="userChildrenMap" type="org.viodo.mp.model.UserChildren">
+        <id column="id" property="id"/>
+        <result column="age" property="age"/>
+        <result column="email" property="email"/>
+        <result column="name" property="name"/>
+        <collection property="childrenList" ofType="org.viodo.mp.entity.Children" columnPrefix="c_" javaType="java.util.List">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+            <result column="user_id" property="userId"/>
+        </collection>
+    </resultMap>
+
+</mapper>
