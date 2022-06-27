@@ -11,12 +11,12 @@
     <description>spring-boot-demo</description>
 
     <modules>
-
         <module>hadoop</module>
         <module>activemq</module>
         <module>mybatis-plus</module>
         <module>tensorflow</module>
         <module>minio</module>
+        <module>htmltopdf</module>
     </modules>
 
     <repositories>
